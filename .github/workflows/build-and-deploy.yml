@@ -29,9 +29,6 @@ jobs:
     - name: Build website
       run: npm run build
 
-    - name: Export static website
-      run: npm run export
-
     - name: Copy files to the production website with the AWS CLI
       run: |
         aws s3 cp  sync ./out s3://${{ env.BUCKET }}/
