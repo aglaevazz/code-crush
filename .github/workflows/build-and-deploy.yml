@@ -2,6 +2,8 @@
 name: Build and Deploy Next.js App to CloudFront
 on:
   push:
+    branches: [ main, test ]
+  merge:
     branches: [ main ]
 jobs:
   build-and-deploy:
