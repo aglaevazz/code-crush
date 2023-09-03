@@ -1,38 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CodeCrush.link Business Homepage Template (WIP)
+
+Welcome to the CodeCrush.link Business Homepage Template project! This project serves as a pet project that can potentially be used as a template for creating business homepages in the future. It is built using Next.js, utilizing the create-react-app bootstrapping, and incorporates components from the next-ui component library. The deployment process is automated using GitHub Actions, with the website being hosted in an AWS S3 bucket and distributed via CloudFront.
+
+## Table of Contents
+
+- [Accessing the Website](#accessing-the-website)
+- [Technologies Used](#technologies-used)
+- [Components](#components)
+- [Deployment](#deployment)
+- [Folder Structure](#folder-structure)
+- [Getting Started](#getting-started)
+
+## Accessing the Website
+
+The deployed website can be accessed at [www.codecrush.link](https://www.codecrush.link). This is the live version of the business homepage template generated from the latest code in the `main` branch.
+
+## Technologies Used
+* Next.js
+* React
+* Next UI
+* AWS Bucket, Route53, Cloud Front
+
+## Components
+
+The project utilizes the [next-ui component library](https://nextui.org/) for building UI components. These components are located in the `components/` directory. You can customize and extend these components to match your business's branding and design requirements.
+
+## Deployment
+
+The project is set up for automated deployment using GitHub Actions. Whenever code is pushed or merged into the `main` branch, the GitHub Actions workflow is triggered. This workflow builds the project, generates optimized assets, and deploys them to an AWS S3 bucket. The website content is then distributed via CloudFront for optimal performance.
+
+## Folder Structure
+
+The project's folder structure is organized as follows:
+
+- `components/`: Contains reusable UI components built using the next-ui library.
+- `pages/`: Houses the main pages of the website.
+- `public/`: Stores static assets such as images, fonts, and other resources.
+- `styles/`: Includes global and component-specific styling using CSS or other styling solutions.
+- `utils/`: Contains utility functions or helper scripts.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone this repository to your local machine.
+2. Navigate to the project directory using the command line.
+3. Run `npm install` to install the required dependencies.
+4. Start the development server with `npm run dev`.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Feel free to explore, modify, and adapt this project to create your own professional business homepage. If you have any questions or need assistance, don't hesitate to reach out.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Happy coding!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
