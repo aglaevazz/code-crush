@@ -1,6 +1,6 @@
 # CodeCrush.link Business Homepage Template (WIP)
 
-Welcome to the CodeCrush.link Business Homepage Template project! This project serves as a pet project that can potentially be used as a template for creating business homepages in the future. It is built using Next.js, utilizing the create-react-app bootstrapping, and incorporates components from the next-ui component library. The deployment process is automated using GitHub Actions, with the website being hosted in an AWS S3 bucket and distributed via CloudFront.
+Welcome to the [CodeCrush.link Business Homepage Template](https://www.codecrush.link) project! This project serves as a pet project that can potentially be used as a template for creating business homepages in the future. It is built using Next.js, utilizing the create-react-app bootstrapping, and incorporates components from the next-ui component library. The deployment process is automated using GitHub Actions, with the website being hosted in an AWS S3 bucket and distributed via CloudFront.
 
 ## Table of Contents
 
