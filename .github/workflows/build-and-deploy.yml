@@ -10,9 +10,9 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      BUCKET: www.codecrush.link
-      REGION: eu-central-1
-      DIST_ID: E1VR35XVV7IPQD
+      BUCKET: ${{ secrets.BUCKET }}
+      REGION: ${{ secrets.REGION }}
+      DIST_ID: ${{ secrets.DIST_ID }}
 
     steps:
     - name: Checkout
@@ -23,7 +23,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ env.REGION }}
+        aws-region: ${{ secrets.REGION }}
 
     - name: Install Dependencies
       run: npm install
@@ -33,10 +33,10 @@ jobs:
 
     - name: Copy files to the production website with the AWS CLI
       run: |
-        aws s3 sync ./out s3://${{ env.BUCKET }}/
+        aws s3 sync ./out s3://${{ secrets.BUCKET }}/
 
     - name: Invalidate CloudFront cache
       run: |
         aws cloudfront create-invalidation \
-          --distribution-id ${{ env.DIST_ID }} \
+          --distribution-id ${{ secrets.DIST_ID }} \
           --paths "/*"
